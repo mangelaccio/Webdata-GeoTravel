@@ -11,6 +11,7 @@ For more information, read the [pdf](docs/CS483_FinalProposal.pdf) documentation
 
 ### Requirements
 Python 2
+
 Imports: Whoosh, urllib, folium, sqlite3, jinja2, flask, beautifulsoup, requests
 
 ### Executing
