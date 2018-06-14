@@ -1,0 +1,223 @@
+	*
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+	html {
+	    height: 100%;
+		margin: 0;
+		padding: 0;
+	   color: white;
+	   -webkit-font-smoothing: subpixel-antialiased;
+	}
+
+    iframe {
+        border: 2px solid #727272;
+    }
+
+    span {
+        color: black;
+    }
+
+    .fadetoblack {
+	   background: linear-gradient(top, rgba( 255, 255, 255, 255 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
+	   background: -moz-linear-gradient(top, rgba( 255, 255, 255, 0) 0%, rgba( 255, 255, 255, 1 ) 100% );
+	   background: -ms-linear-gradient(top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
+	   background: -o-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
+	}
+
+	.imagewrapper {
+	   position: relative;
+	   width: 350px;
+	   height: 150px;
+	   border: 0px solid rgba(0, 0, 0, 0);
+	   margin-bottom: 2px;
+	   background-repeat:no-repeat;
+	   background-size:cover;
+	   background-color: #ffffff;
+	}
+
+/*
+    .imagewrapper:hover {
+	   opacity: 0.75;
+	   transition: opacity 0.3s ease-in-out;
+	}
+*/
+	.caption {
+        border-radius: 0px 0px;
+        border: 0px solid rgba(0, 0, 0, 0);
+        position: absolute;
+        bottom: 0;
+        width: 350px;
+        height: 40px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.45) 75%, rgba(0, 0, 0, 0.6) 100%) no-repeat;
+    }
+
+    .caption:hover {
+	   opacity: 0.75;
+	   transition: opacity 0.3s ease-in-out;
+	}
+	.text {
+	   font-family: 'Montserrat', sans-serif;
+	   font-size: 17pt;
+	   margin:0;
+	   padding:0;
+	   margin-top: 10px;
+	   color: white;
+	}
+
+
+
+html, body, .Container
+{
+    height: 100%;
+}
+
+
+    .Container:before
+    {
+        content: '';
+        height: 100%;
+        float: left;
+    }
+
+.Header
+{
+    margin-top:2px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.Content
+{
+    position: relative;
+    z-index: 1;
+}
+    .Content:after
+    {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+.Wrapper
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+    .Wrapper > div
+    {
+        height: 100%;
+    }
+
+.LeftContent
+{
+    background-color: white;
+    overflow: auto;
+}
+
+.RightContent
+{
+	width: 376px;
+  background-color: white;
+  float: right;
+  overflow: auto;
+  margin-left: 10px;
+
+}
+/*
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_anim_search
+*/
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid rgb(114, 114, 114);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+
+
+/* http://stackoverflow.com/questions/306252/how-to-align-checkboxes-and-their-labels-consistently-cross-browsers*/
+.checkboxes label {
+    display: block;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    white-space: nowrap;
+}
+.checkboxes input {
+    vertical-align: middle;
+}
+.checkboxes label span {
+    vertical-align: middle;
+}
+
+/* https://jsfiddle.net/wb8u02kL/1/ */
+#error {
+    font-family: 'Montserrat', serif;
+    color: black;
+    font-size: 26pt;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.buttonsquare {
+    border: 0px solid black;
+    padding: 7px;
+    margin: 7px;
+    background-color: rgba(0, 0, 0, 0.44);
+    color: #fff;
+}
+
+    .buttonsquare:hover {
+	   opacity: 0.75;
+	   transition: opacity 0.3s ease-in-out;
+	}
+
+    .buttonsquarer {
+    border: 0px solid black;
+    z-index: 3;
+    padding: 7px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-color: rgba(0, 0, 0, 0.44);
+    color: #fff;
+}
+
+    .buttonsquarer:hover {
+	   opacity: 0.75;
+	   transition: opacity 0.3s ease-in-out;
+	}
+
+/*https://github.com/t4t5/sweetalert/issues/521*/
+    .sweet-alert {
+    box-sizing : border-box;
+    max-height : 100% !important;
+    overflow-y : auto !important;
+    padding : 0 17px 17px !important;
+    width : 512px;
+
+    //As default top and left are 50%, so it will transform those values and will set the modal exactly in the middle
+    transform: translate(-50%, -50%);
+
+       //remove margins
+       margin: 0;
+}

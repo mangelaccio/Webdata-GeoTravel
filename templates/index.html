@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Lora:700|Montserrat" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<title>GeoTravel</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static',filename='favicon/apple-touch-icon.png') }}">
+		<link rel="icon" type="image/png" href="{{ url_for('static',filename='favicon/favicon-32x32.png') }}" sizes="32x32">
+		<link rel="icon" type="image/png" href="{{ url_for('static',filename='favicon/favicon-16x16.png') }}" sizes="16x16">
+		<link rel="manifest" href="{{ url_for('static',filename='favicon/manifest.json') }}">
+		<link rel="mask-icon" href="{{ url_for('static',filename='favicon/safari-pinned-tab.svg') }}" color="#003099">
+		<link rel="shortcut icon" href="{{ url_for('static',filename='favicon/favicon.ico') }}">
+		<meta name="msapplication-config" content="{{ url_for('static',filename='favicon/browserconfig.xml') }}">
+	</head>
+	<body>
+	{% set bgnum = range(1,8) | random | string %}
+	{% set bgfn = 'images/background' + bgnum + '.jpg' %}
+	<img id="bg" src="{{ url_for('static',filename=bgfn) }}">
+<p id="demo"></p>
+<div class="center-text">
+	<div class="absolute-center">
+		<img src="{{ url_for('static',filename='images/compass-rose.png') }}" alt="Compass" width="80px" height="80px" id="compass"><h1>GeoTravel<h1>
+			<h2>Where do you want to go?</h2><br>
+		<form method="get" action="{{ url_for('results') }}">
+			<input type="text" name="searchterm" placeholder="Search..." /><i class="fa fa-search" id="search-icon" aria-hidden="true"></i><br />
+			<input type="hidden" name="waterfall" id="w" value="on" checked/>
+			<input type="hidden" name="national_park" id="x" value="on" checked/>
+			<input type="hidden" name="mountain" id="y" value="on" checked/>
+			<input type="hidden" name="lake" id="z" value="on" checked/>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
