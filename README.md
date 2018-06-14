@@ -24,6 +24,6 @@ or
     python2 flask_server.py
 ```
 
-*set browser URL to **localhost:5000** after execution*
+*set browser URL to **localhost:5000** after execution to land on the homepage of GeoTravel.*
 
 Included is the Webscrapping program, [WebScraper.py](WebScraper.py) which takes many hours to process.  Depending on changes to Wikipedia's API and format, the webscrapper may no longer work.
