@@ -6,9 +6,11 @@ GeoTravel is a minimalist search engine implemented in Python using various libr
 
 For more information, read the [pdf](docs/CS483_FinalProposal.pdf) documentation found in the **/docs** folder.
 
+### Screenshots
 ![Screenshot: Fuji](screenshots/GeoTravel-Fuji.png)
+#### Fuji Search - Screenshot
 ![Screenshot: Yosemite](screenshots/GeoTravel-Yosemite.png)
-
+#### Yosemite Search - Screenshot
 ### Requirements
 Python 2
 
