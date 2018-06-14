@@ -4,7 +4,7 @@
 ### Abstract
 GeoTravel is a minimalist search engine implemented in Python using various libraries like Whoosh for data indexing, Flask for database interfacing, and Jinja for dynamic web page building. The search engine displays results and information on *lakes, mountains, national parks,* and *waterfalls* as per the user’s query. The data collected in the backend database is scraped from **Wikipedia’s API** and parsed into four data tables built in **SQLite3**, each containing information about their respective topics.
 
-For more information, see the [pdf.](docs/CS483_FinalProposal.pdf)
+For more information, read the [pdf](docs/CS483_FinalProposal.pdf) documentation found in the **/docs** folder
 
 ![Screenshot: Fuji](screenshots/GeoTravel-Fuji.png)
 ![Screenshot: Yosemite](screenshots/GeoTravel-Yosemite.png)
@@ -14,7 +14,7 @@ Python 2
 Imports: Whoosh, urllib, folium, sqlite3, jinja2, flask, beautifulsoup, requests
 
 ### Executing
-*The webscrapper has already constructed the SQLite3 database, images were appended to the database*
+*The webscrapper constructed the SQLite3 database and has been included in this repository*
 ```sh
     ./flask_server.py
 ```
@@ -23,4 +23,4 @@ or
     python2 flask_server.py
 ```
 
-** set browser URL to localhost:5000 after execution. **
+*set browser URL to **localhost:5000** after execution*
