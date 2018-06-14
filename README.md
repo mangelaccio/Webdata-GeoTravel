@@ -12,10 +12,12 @@ For more information, read the [pdf](docs/CS483_FinalProposal.pdf) documentation
 ### Requirements
 Python 2
 
-Imports: Whoosh, urllib, folium, sqlite3, jinja2, flask, beautifulsoup, requests
+Imports: *Whoosh, urllib, folium, sqlite3, jinja2, flask, beautifulsoup, and requests*
+
+*Note: The webscrapper constructed the SQLite3 database and has been included in this repository*
 
 ### Executing
-*Note: The webscrapper constructed the SQLite3 database and has been included in this repository*
+#### Step #1
 
 ```sh
     ./flask_server.py
@@ -24,7 +26,7 @@ or
 ```sh
     python2 flask_server.py
 ```
-
+#### Step #2
 *set browser URL to **localhost:5000** after execution to land on the homepage of GeoTravel.*
-
+#### Addendium
 Included is the Webscrapping program, [WebScraper.py](WebScraper.py) which takes many hours to process.  Depending on changes to Wikipedia's API and format, the webscrapper may no longer work.
